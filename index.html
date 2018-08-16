@@ -84,20 +84,22 @@
         url:"https://yamauchi-inochu.github.io/arcgis_api/kml/shelter.kml",
         id:"shelter",
         copyright:"国土数値情報（避難施設）を加工し作成",
+        visible: false
       });
 
       const flood = new KMLLayer({
       url:"https://yamauchi-inochu.github.io/arcgis_api/kml/flood.kml",
       id:"flood",
       copyright:"国土数値情報（浸水想定区域）を加工し作成",
-      opacity:0.8
+      opacity:0.6
       });
 
       const did = new KMLLayer({
       url:"https://yamauchi-inochu.github.io/arcgis_api/kml/did.kml",
       id:"did",
       copyright:"国土数値情報（DID）を加工し作成",
-      visible: false
+      visible: false,
+      opacity:0.6
       });
 
       const map = new Map({
@@ -186,7 +188,7 @@
   </script>
 </head>
 <body>
-  <div id="viewDiv" ><button id="toggle" type="button" class="my_button"><v>凡例</v></button></div>
+  <div id="viewDiv" ><button id="toggle" type="button" class="my_button">凡例</button></div>
   <div class="container">
     <div class="layerToggle">
       <div id="title"><br>背景地図</div>
@@ -198,7 +200,7 @@
       </div>
       <div id="title"><br>レイヤ</div>
       <div class="content">
-        <p><input type="checkbox" id="shelter" checked /> 一次避難所<br>
+        <p><input type="checkbox" id="shelter"/> 一次避難所<br>
         <p><input type="checkbox" id="did" /> 人口集中地区<br></p>
         <p><input type="checkbox" id="flood" checked /> 想定浸水区域<br></p>
         <div style="width:100px; height:90px;">
