@@ -1,15 +1,15 @@
-﻿* {
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
 }
 
 body {
     font-size:100% ;
     font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
-    line-height: 1
+    line-height: 1;
 }
 img{
     width:auto;
@@ -21,7 +21,7 @@ v {
     width: 90%;
     height: 25%;
    font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
-    color: #393e4f;
+    color: #000000;
     margin-right: 10px;
     letter-spacing: 3px;
     line-height: 150%;
@@ -42,12 +42,12 @@ div.layerToggle {
 div#title {
     width: 100%;
    font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
-    color: #393e4f;
+    color: #000000;
     text-align: center;
     font-size: 1.2em;
 }
 .content {
-    color: #393e4f;
+    color: #000000;
     margin: 0 auto;
     width: 100%;
     float: left;
@@ -56,7 +56,7 @@ p {
     width: 90%;
     height: 25%;
     font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
-    color: #393e4f;
+    color: #000000;
     margin-right: 10px;
     letter-spacing: 3px;
     line-height: 150%;
@@ -68,8 +68,24 @@ div.container {
    float: left;
 }
 .my_button{  
+  background-color: #009588;
+  border: none;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  panding:auto;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: Georgia, "游明朝", "Yu Mincho", "游明朝体", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho ProN", "MS P明朝", "MS PMincho", HGS明朝E, "MS Mincho", serif;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  
+   border-radius: 12px;
    position: absolute;  
    z-index: 100;  
-   left: 2%;  
-   bottom:79%;  
+   left: 6%;  
+   bottom:93%;  
 }  
+.my_button:hover {opacity: 1}
