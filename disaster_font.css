@@ -85,7 +85,7 @@ div.container {
    border-radius: 12px;
    position: absolute;  
    z-index: 100;  
-   left: 6%;  
+   left:92%;  
    bottom:93%;  
 }  
 .my_button:hover {opacity: 1}
